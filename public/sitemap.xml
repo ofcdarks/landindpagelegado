@@ -12,5 +12,21 @@
     <priority>1.0</priority>
   </url>
   
+  <!-- Termos de Uso -->
+  <url>
+    <loc>https://talialmeida.com.br/termos-de-uso</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Política de Privacidade -->
+  <url>
+    <loc>https://talialmeida.com.br/politica-de-privacidade</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>
 

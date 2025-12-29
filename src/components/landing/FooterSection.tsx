@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
@@ -89,12 +90,12 @@ const FooterSection = () => {
 
             {/* Links */}
             <div className="flex flex-wrap justify-center gap-8 text-sm text-off-white/60">
-              <a href="#" className="hover:text-gold transition-colors">
+              <Link to="/termos-de-uso" className="hover:text-gold transition-colors">
                 Termos de Uso
-              </a>
-              <a href="#" className="hover:text-gold transition-colors">
+              </Link>
+              <Link to="/politica-de-privacidade" className="hover:text-gold transition-colors">
                 Política de Privacidade
-              </a>
+              </Link>
               <a href="mailto:contato@estacaolar.com.br" className="hover:text-gold transition-colors">
                 Contato
               </a>
