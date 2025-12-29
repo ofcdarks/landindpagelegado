@@ -1,0 +1,19 @@
+# Easypanel configuration
+# This file helps Easypanel understand your application
+
+name: landing-page
+type: app
+
+build:
+  dockerfile: Dockerfile
+  context: .
+
+ports:
+  - 80
+
+healthcheck:
+  path: /health
+  interval: 30s
+  timeout: 10s
+  retries: 3
+
