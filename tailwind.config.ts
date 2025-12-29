@@ -71,6 +71,7 @@ export default {
         terracotta: "hsl(var(--terracotta))",
         burgundy: "hsl(var(--burgundy))",
         "off-white": "hsl(var(--off-white))",
+        brown: "hsl(var(--brown))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

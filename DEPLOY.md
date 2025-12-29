@@ -57,12 +57,18 @@ Após o deploy:
 2. Acesse a URL fornecida pelo Easypanel
 3. Teste a aplicação para garantir que está funcionando
 
-### 6. Configurar Domínio (Opcional)
+### 6. Configurar Domínio e SSL/HTTPS
 
 1. No painel do Easypanel, vá em "Domains" ou "Domínios"
-2. Adicione seu domínio personalizado
-3. Configure os registros DNS conforme instruções do Easypanel
+2. Adicione seu domínio personalizado (ex: `talialmeida.com.br`)
+3. Configure os registros DNS conforme instruções do Easypanel:
+   - Configure um registro **A** apontando para o IP do seu servidor VPS
+   - Ou configure um registro **CNAME** se fornecido pelo Easypanel
 4. Aguarde a propagação DNS (pode levar algumas horas)
+5. **SSL/HTTPS**: O Easypanel configurará automaticamente um certificado SSL gratuito via Let's Encrypt
+   - Após a propagação DNS, aguarde alguns minutos para o certificado ser gerado
+   - O site ficará acessível via HTTPS automaticamente
+   - Veja o arquivo `SSL_SETUP.md` para mais detalhes sobre configuração de SSL
 
 ## Estrutura dos Arquivos de Deploy
 

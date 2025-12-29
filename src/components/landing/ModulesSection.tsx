@@ -14,6 +14,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 import {
   Dialog,
@@ -142,6 +144,8 @@ const ModulesSection = () => {
             plugins={[autoplayPlugin.current]}
             className="w-full"
           >
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
             <CarouselContent className="-ml-4">
               {modules.map((module, index) => (
                 <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
