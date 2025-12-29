@@ -34,39 +34,39 @@ const PricingSection = () => {
       {/* Decorations */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-40 bg-gradient-to-b from-gold/50 to-transparent" />
 
-      <div className="w-full max-w-4xl mx-auto relative z-10 px-5 sm:px-8 md:px-12">
+      <div className="w-full max-w-4xl mx-auto relative z-10 px-4 sm:px-8 md:px-12">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-8 animate-fade-up">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="flex justify-center mb-6 sm:mb-8 animate-fade-up">
             <div className="decorative-line" />
           </div>
-          <span className="inline-block px-5 py-2 rounded-full bg-gold/10 text-gold text-sm font-bold uppercase tracking-[0.2em] mb-8 animate-fade-up delay-100 border border-gold/20">
+          <span className="inline-block px-4 sm:px-5 py-2 rounded-full bg-gold/10 text-gold text-xs sm:text-sm font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] mb-6 sm:mb-8 animate-fade-up delay-100 border border-gold/20">
             💎 Oferta Exclusiva
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground mb-6 animate-fade-up delay-200">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground mb-4 sm:mb-6 animate-fade-up delay-200">
             Garanta sua vaga na
             <span className="block text-gradient-gold italic mt-2">Mentoria Estação Lar</span>
           </h2>
         </div>
 
         {/* Urgency Timer - Premium style */}
-        <div className="mb-12 animate-fade-up delay-300">
-          <div className="bg-gradient-premium rounded-3xl p-8 text-center shadow-2xl border border-gold/20">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="w-3 h-3 rounded-full bg-red-500 animate-pulse" />
-              <p className="text-off-white/90 text-lg font-medium uppercase tracking-wider">
+        <div className="mb-8 sm:mb-12 animate-fade-up delay-300">
+          <div className="bg-gradient-premium rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center shadow-2xl border border-gold/20">
+            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <span className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500 animate-pulse" />
+              <p className="text-off-white/90 text-sm sm:text-lg font-medium uppercase tracking-wider">
                 Oferta por tempo limitado
               </p>
             </div>
-            <div className="flex justify-center gap-4 md:gap-6">
+            <div className="flex justify-center gap-2 sm:gap-4 md:gap-6">
               {[
                 { value: timeLeft.hours, label: "Horas" },
                 { value: timeLeft.minutes, label: "Minutos" },
                 { value: timeLeft.seconds, label: "Segundos" },
               ].map((item, i) => (
                 <div key={i} className="text-center">
-                  <div className="bg-off-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 min-w-[90px] md:min-w-[110px] border border-gold/20">
-                    <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-off-white font-display drop-shadow-lg">
+                  <div className="bg-off-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 min-w-[70px] sm:min-w-[90px] md:min-w-[110px] border border-gold/20">
+                    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-off-white font-display drop-shadow-lg">
                       {String(item.value).padStart(2, "0")}
                     </p>
                   </div>

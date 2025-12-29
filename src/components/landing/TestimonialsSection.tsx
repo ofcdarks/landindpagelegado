@@ -167,9 +167,9 @@ const TestimonialsSection = () => {
           >
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <Card
                     onClick={() => setSelectedTestimonial(testimonial)}
                     className={`h-full bg-card/95 backdrop-blur-md border-none overflow-hidden group transition-all duration-500 hover:-translate-y-2 cursor-pointer ${

@@ -21,30 +21,30 @@ const ProblemSection = () => {
       <div className="absolute top-20 right-20 w-32 h-32 rounded-full border border-gold/20 floating-element" />
       <div className="absolute bottom-20 left-20 w-24 h-24 rounded-full border border-gold/10 floating-element-delayed" />
 
-      <div className="w-full max-w-6xl mx-auto relative z-10 px-5 sm:px-8 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+      <div className="w-full max-w-6xl mx-auto relative z-10 px-4 sm:px-8 md:px-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left side - Emotional connection */}
           <div className="animate-slide-in-left">
-            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-rose/60 backdrop-blur-sm border border-terracotta/20 text-terracotta mb-8">
+            <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-3 rounded-full bg-rose/60 backdrop-blur-sm border border-terracotta/20 text-terracotta mb-6 sm:mb-8">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
               </svg>
               <span className="text-sm font-semibold uppercase tracking-wider">Eu te entendo</span>
             </div>
 
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground leading-[1.1] mb-6 sm:mb-8">
+            <h2 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground leading-[1.1] mb-4 sm:mb-8">
               Eu sei exatamente
               <span className="block text-gradient-gold italic mt-2">como você se sente</span>
             </h2>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed font-light">
+            <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-10 leading-relaxed font-light">
               Porque eu já estive nesse mesmo lugar. E posso te dizer:{" "}
               <strong className="text-foreground font-semibold">existe um caminho de volta para quem você foi chamada a ser</strong>.
             </p>
 
             {/* Decorative quote */}
-            <div className="relative pl-8 border-l-4 border-gold/50 mb-10">
-              <p className="font-display text-2xl italic text-foreground/80">
+            <div className="relative pl-4 sm:pl-8 border-l-4 border-gold/50 mb-6 sm:mb-10">
+              <p className="font-display text-lg sm:text-2xl italic text-foreground/80">
                 "A restauração começa quando você decide dar o primeiro passo."
               </p>
             </div>

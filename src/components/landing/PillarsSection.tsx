@@ -77,14 +77,14 @@ const PillarsSection = () => {
         </div>
 
         {/* Pillars grid - Premium cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pt-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8 pt-6">
           {pillars.map((pillar, index) => (
             <div
               key={index}
               className="animate-fade-up group"
               style={{ animationDelay: `${(index + 1) * 150}ms` }}
             >
-              <div className="relative h-full bg-primary-foreground/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 pt-8 sm:pt-10 md:pt-12 border border-primary-foreground/10 hover:border-gold/50 transition-all duration-700 hover:-translate-y-3 hover:shadow-gold overflow-visible">
+              <div className="relative h-full bg-primary-foreground/5 backdrop-blur-sm rounded-xl sm:rounded-3xl p-4 sm:p-8 md:p-10 pt-7 sm:pt-10 md:pt-12 border border-primary-foreground/10 hover:border-gold/50 transition-all duration-700 hover:-translate-y-3 hover:shadow-gold overflow-visible">
                 {/* Number badge */}
                 <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold z-10">
                   <span className="text-off-white font-bold text-xs sm:text-sm">0{index + 1}</span>
@@ -94,13 +94,13 @@ const PillarsSection = () => {
                 <div className="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-5 transition-opacity duration-700 rounded-2xl sm:rounded-3xl" />
 
                 {/* Icon */}
-                <div className="icon-box text-off-white mb-4 sm:mb-8 w-12 h-12 sm:w-14 sm:h-14">
+                <div className="icon-box text-off-white mb-3 sm:mb-8 w-10 h-10 sm:w-14 sm:h-14">
                   {pillar.icon}
                 </div>
 
                 {/* Content */}
-                <p className="text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.2em] text-off-white mb-2 sm:mb-3 font-semibold break-words">{pillar.subtitle}</p>
-                <h3 className="font-display text-xl sm:text-3xl md:text-4xl font-medium text-primary-foreground mb-3 sm:mb-5 break-words">
+                <p className="text-xs uppercase tracking-[0.1em] sm:tracking-[0.2em] text-off-white mb-1 sm:mb-3 font-semibold break-words">{pillar.subtitle}</p>
+                <h3 className="font-display text-lg sm:text-3xl md:text-4xl font-medium text-primary-foreground mb-2 sm:mb-5 break-words">
                   {pillar.title}
                 </h3>
                 <p className="text-primary-foreground/60 leading-relaxed text-sm sm:text-lg hidden sm:block break-words">

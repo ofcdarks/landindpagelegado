@@ -146,9 +146,9 @@ const ModulesSection = () => {
           >
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {modules.map((module, index) => (
-                <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                   <div className="group h-full">
                     <div 
                       onClick={() => setSelectedModule(module)}

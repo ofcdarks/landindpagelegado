@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 md:h-32 bg-gradient-to-b from-transparent via-gold/50 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto text-center px-5 sm:px-8 md:px-12 py-20 sm:py-24 md:py-28">
+      <div className="relative z-10 w-full max-w-4xl mx-auto text-center px-4 sm:px-8 md:px-12 py-16 sm:py-24 md:py-28">
         {/* Premium badge with glow */}
         <div className="animate-fade-up">
           <span className="premium-badge inline-flex items-center gap-3 mb-8 sm:mb-10 shine-effect">
@@ -77,11 +77,11 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="animate-fade-up delay-600 mb-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="animate-fade-up delay-600 mb-6 sm:mb-8 flex flex-col items-center justify-center gap-4">
           <Button
             variant="premium"
             size="3xl"
-            className="group pulse-glow text-base sm:text-lg px-6 sm:px-10 py-5 sm:py-6 whitespace-normal h-auto max-w-full"
+            className="group pulse-glow text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-4 sm:py-5 md:py-6 whitespace-normal h-auto w-full max-w-md"
             onClick={() => window.open("https://pay.kiwify.com.br/CdpFbFD", "_blank")}
           >
             <span className="text-center leading-tight">APENAS R$47 PARA VIVER ESTA ESTAÇÃO</span>
@@ -102,7 +102,7 @@ const HeroSection = () => {
         </p>
 
         {/* Trust indicators - premium style - responsive grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 animate-fade-up delay-800 mb-28 sm:mb-32">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 animate-fade-up delay-800 mb-16 sm:mb-32">
           {[
             { icon: "shield", text: "Garantia", subtext: "7 dias" },
             { icon: "calendar", text: "Acesso", subtext: "12 meses" },
@@ -111,7 +111,7 @@ const HeroSection = () => {
           ].map((item, i) => (
             <div 
               key={i} 
-              className="group flex flex-col sm:flex-row items-center gap-2 sm:gap-3 px-3 sm:px-5 py-3 sm:py-4 rounded-xl sm:rounded-2xl bg-card/70 backdrop-blur-md border border-gold/20 hover:border-gold/40 hover:shadow-gold transition-all duration-500"
+              className="group flex flex-col items-center gap-2 px-3 py-3 rounded-xl bg-card/70 backdrop-blur-md border border-gold/20 hover:border-gold/40 hover:shadow-gold transition-all duration-500"
             >
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-gradient-gold flex items-center justify-center group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
                 <svg className="w-5 h-5 sm:w-5 sm:h-5 text-off-white" fill="currentColor" viewBox="0 0 20 20">
@@ -129,9 +129,9 @@ const HeroSection = () => {
                   )}
                 </svg>
               </div>
-              <div className="text-center sm:text-left min-w-0">
-                <p className="font-semibold text-foreground text-sm">{item.text}</p>
-                <p className="text-xs text-gold font-medium truncate">{item.subtext}</p>
+              <div className="text-center min-w-0">
+                <p className="font-semibold text-foreground text-xs sm:text-sm">{item.text}</p>
+                <p className="text-xs text-gold font-medium">{item.subtext}</p>
               </div>
             </div>
           ))}
